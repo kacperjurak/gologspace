@@ -1,7 +1,7 @@
 # goLogSpace
 
 Generates a slice with `n` logarithmically spaced points between `min` and `max`.
-This is especially useful for creating frequency vectors and it's similar to MATLAB logspace function https://www.mathworks.com/help/matlab/ref/logspace.html.
+This is especially useful for creating frequency arrays and it's similar to MATLAB logspace function https://www.mathworks.com/help/matlab/ref/logspace.html.
 
 ## Usage
 ```go
