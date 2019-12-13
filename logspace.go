@@ -1,4 +1,4 @@
-package logspace
+package gologspace
 
 import "math"
 
