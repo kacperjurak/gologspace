@@ -1,6 +1,6 @@
 # goLogSpace
 
-Generates a slice with `n` logarithmically spaced points between points `min` and `max`.
+Generates a slice with `n` logarithmically spaced points between `min` and `max`.
 This is especially useful for creating frequency vectors and it's similar to MATLAB logspace function https://www.mathworks.com/help/matlab/ref/logspace.html.
 
 ## Usage
@@ -11,7 +11,7 @@ var (
 	n int = 100
 )
 
-logspace.Generate(min, max, n)
+gologspace.Generate(min, max, n)
 ```
 
 ## License
