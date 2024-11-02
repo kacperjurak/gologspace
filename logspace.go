@@ -3,17 +3,20 @@ package gologspace
 import "math"
 
 func Generate(min float64, max float64, points uint) []float64 {
+	const base = math.E
+
 	var (
-		base             = math.E
 		logMin           = math.Log(min)
 		logMax           = math.Log(max)
 		delta            = (logMax - logMin) / float64(points)
 		accDelta float64 = 0
-		v        []float64
+		pts              = make([]float64, 0, points)
 	)
-	for i := 0; i < int(points); i++ {
-		v = append(v, math.Pow(base, logMin+accDelta))
+
+	for range points {
+		pts = append(pts, math.Pow(base, logMin+accDelta))
 		accDelta += delta
 	}
-	return v
+
+	return pts
 }

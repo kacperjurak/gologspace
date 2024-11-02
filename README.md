@@ -8,7 +8,7 @@ This is especially useful for creating frequency arrays and it's similar to MATL
 var (
 	min float64 = 0.001
 	max float64 = 1000000
-	n int = 100
+	n uint = 100
 )
 
 gologspace.Generate(min, max, n)
